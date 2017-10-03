@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Participants</title>
+<style>
+	#headbox {
+   background-color: #ADB5BC;
+	height: 96px;
+	width: 976px;
+	margin: auto;
+		} 
+	
+	#logo {
+		margin: 32px 0 0 32px;
+		}
+	
+	#middle {
+	background-color: #F1F1F1;
+	position: fixed;
+	height: 800px;
+	width: 976px;
+	margin-left: 224px;
+	}
+	
+  
+	#middle p {
+		font-family: helvetica;
+		color: #757575;
+		font-size: 150%;
+		padding: 40px 0 32px 32px; 
+	}
+	
+	
+	#container {
+		width: 100px
+		height: 100px;
+  		position: relative;
+		
+	}
+	
+	#addnew {
+	  width: 912px;
+	  height: 72px;
+	  position: absolute;
+	  top: 130px;
+	  left: 18%;
+   	  background-color: #FFFFFF;
+}
+
+	input[type=text], select {
+		width: 155px;
+		padding: 16px 20px;
+		margin: 10px 16px;
+		display: inline-block;
+		border: 1px solid #DDDDDD;
+		border-radius: 4px;
+		box-sizing: border-box;
+		font-size: 90%;
+		color: #505050;
+		background-color: #FAFAFA;
+	}
+
+	input[type=email], select {
+		width: 300px;
+		padding: 16px 20px;
+		margin: 10px 0px;
+		display: inline-block;
+		border: 1px solid #DDDDDD;
+		border-radius: 4px;
+		box-sizing: border-box;
+		font-size: 90%;
+		color: #505050;
+		background-color: #FAFAFA;
+		}
+		
+	input[type=button], select {
+		width: 155px;
+		padding: 16px 20px;
+		margin: 10px 35px;
+		display: inline-block;
+		border: 1px solid #DDDDDD;
+		border-radius: 4px;
+		box-sizing: border-box;
+		font-size: 90%;
+		color: #505050;
+		background-color: #F1F1F1;
+	}
+	
+	#data {
+		width: 912px;
+		height: 48px;
+		background-color: #FFFFFF;
+		position: absolute;
+		top: 210px;
+	    left: 18%;
+		
+	}
+	
+	#data p {
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 500;
+		font-family: helvetica;
+		margin-left: 30px;
+		
+		
+	}
+	
+	#data h1{
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 500;
+		font-family: helvetica;
+		margin-left: 201px;
+		margin-top: -29px;
+		color: #757575
+
+	}
+	
+	#data h2{
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 500;
+		font-family: helvetica;
+		margin-left: 520px;
+		margin-top: -29px;
+		color: #757575;
+		
+		 }
+	
+	#info {
+		width: 912px;
+		height: 72px;
+		background-color: #FFFFFF;
+		position: absolute;
+		top: 260px;
+	    left: 18%;
+		 }
+	
+	#info p {
+		color: #505050;
+		font-size: 16px;
+		line-height: 40px;
+		font-weight: 400;
+		margin-left: 30px
+		
+			}
+	
+	#info h1 {
+		color: #505050;
+		font-size: 16px;
+		line-height: 40px;
+		font-weight: 400;
+		margin-left: 201px ;
+		margin-top: -55px
+			
+	}
+	
+	#info h2 {
+		color: #505050;
+		font-size: 16px;
+		line-height: 40px;
+		font-weight: 400;
+		margin-left: 523px;
+		margin-top: -50px;
+		
+	}
+	
+	#info img {
+		margin-left: 770px;
+		margin-top: -51px;
+		position: absolute;
+		height: 40%;
+
+	}
+
+	#info .delete {
+		margin-left: 822px;
+		margin-top: -51px;
+		position: absolute;
+		height: 40%;
+		
+	}
+	
+	#info1 {
+		width: 912px;
+		height: 72px;
+		background-color: #FFFFFF;
+		position: absolute;
+		top: 334px;
+	    left: 18%;
+		 }
+	
+	#info1 p {
+		color: #505050;
+		font-size: 16px;
+		line-height: 40px;
+		font-weight: 400;
+		margin-left: 30px
+		
+			}
+	
+	#info1 h1 {
+		color: #505050;
+		font-size: 16px;
+		line-height: 40px;
+		font-weight: 400;
+		margin-left: 201px;
+		margin-top: -55px
+			
+	}
+	
+	#info1 h2 {
+		color: #505050;
+		font-size: 16px;
+		line-height: 40px;
+		font-weight: 400;
+		margin-left: 523px;
+		margin-top: -50px;
+		
+	}
+	
+	#info1 img {
+		margin-left: 770px;
+		margin-top: -51px;
+		position: absolute;
+		height: 40%;
+
+	}
+
+	#info1 .delete {
+		margin-left: 822px;
+		margin-top: -51px;
+		position: absolute;
+		height: 40%;
+		
+	}
+	
+	#info2 {
+		width: 912px;
+		height: 72px;
+		background-color: #FFFFFF;
+		position: absolute;
+		top: 408px;
+	    left: 18%;
+		 }
+	
+	#info2 p {
+		color: #505050;
+		font-size: 16px;
+		line-height: 40px;
+		font-weight: 400;
+		margin-left: 30px
+		
+			}
+	
+	#info2 h1 {
+		color: #505050;
+		font-size: 16px;
+		line-height: 40px;
+		font-weight: 400;
+		margin-left: 201px;
+		margin-top: -55px
+			
+	}
+	
+	#info2 h2 {
+		color: #505050;
+		font-size: 16px;
+		line-height: 40px;
+		font-weight: 400;
+		margin-left: 523px;
+		margin-top: -50px;
+		
+	}
+	
+	#info2 img {
+		margin-left: 770px;
+		margin-top: -51px;
+		position: absolute;
+		height: 40%;
+
+	}
+
+	#info2 .delete {
+		margin-left: 822px;
+		margin-top: -51px;
+		position: absolute;
+		height: 40%;
+		
+	}
+	
+	#info3 {
+		width: 912px;
+		height: 72px;
+		background-color: #FFFFFF;
+		position: absolute;
+		top: 482px;
+	    left: 18%;
+		 }
+	
+	#info3 p {
+		color: #505050;
+		font-size: 16px;
+		line-height: 40px;
+		font-weight: 400;
+		margin-left: 30px
+		
+			}
+	
+	#info3 h1 {
+		color: #505050;
+		font-size: 16px;
+		line-height: 40px;
+		font-weight: 400;
+		margin-left: 201px;
+		margin-top: -55px
+			
+	}
+	
+	#info3 h2 {
+		color: #505050;
+		font-size: 16px;
+		line-height: 40px;
+		font-weight: 400;
+		margin-left: 523px;
+		margin-top: -50px;
+		
+	}
+	
+	#info3 img {
+		margin-left: 770px;
+		margin-top: -51px;
+		position: absolute;
+		height: 40%;
+
+	}
+
+	#info3 .delete {
+		margin-left: 822px;
+		margin-top: -51px;
+		position: absolute;
+		height: 40%;
+		
+	}
+</style>
+</head>
+<body>
+	
+	<div>
+		
+		<div id="headbox">
+			 <img id="logo"src="logo.png" alt="logo"/>
+		</div>
+		
+	</div>
+			
+			<div id="container">
+				
+				<div id="middle">
+					<p>List of participants</p>
+				</div>
+	
+					
+						<div id="addnew">
+							
+								<input type="text" id="fname" name="fullname" placeholder="Full name">
+							
+								<input type='email' id="Email" name="Email" placeholder="E-mail address">
+							
+								<input type='text' id="pnumber" name="phonenumber" placeholder="Phone number">
+							
+								<input type="button" class="button" value="Add new">
+	
+						</div>
+				
+				
+								<div id="data">
+									<p>Name &darr;</p>
+									<h1>E-mail address</h1>
+									<h2>Phone number</h2>
+								</div>
+				
+				
+										<div id="info">
+											<p>John Doe</p>
+											<h1>john.doe@gmail.com</h1>
+											<h2>0405678471</h2>
+											<img src="pen.png" />
+											<img class="delete" src="delete.png" />
+				
+										</div>
+				
+										<div id="info1">
+											<p>George Clooney</p>
+											<h1>george.clooney@hollywood.com </h1>
+											<h2>0504629898</h2>
+											<img src="pen.png" />
+											<img class="delete" src="delete.png" />
+				
+										</div>
+				
+										<div id="info2">
+											<p>George Clooney</p>
+											<h1>george.clooney@hollywood.com </h1>
+											<h2>0504629898</h2>
+											<img src="pen.png" />
+											<img class="delete" src="delete.png" />
+				
+										</div>
+				
+										<div id="info3">
+											<p>George Clooney</p>
+											<h1>george.clooney@hollywood.com </h1>
+											<h2>0504629898</h2>
+											<img src="pen.png" />
+											<img class="delete" src="delete.png" />
+				
+										</div>
+				
+										
+
+						
+				
+			</div>
+</body>
+</html>
+
